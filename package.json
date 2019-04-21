@@ -1,0 +1,26 @@
+{
+  "name": "shuffle.one",
+  "version": "1.0.0",
+  "description": "Desktop Application For Shuffle.one",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezaghz/shuffle.one.git"
+  },
+  "keywords": [
+    "music",
+    "shuffle"
+  ],
+  "author": "Reza Ghasemzadeh <rezaghasemzadeh1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rezaghz/shuffle.one/issues"
+  },
+  "homepage": "https://github.com/rezaghz/shuffle.one#readme",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
+}
