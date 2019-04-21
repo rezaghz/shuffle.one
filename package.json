@@ -4,7 +4,7 @@
   "description": "Desktop Application For Shuffle.one",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron . "
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/rezaghz/shuffle.one#readme",
   "devDependencies": {
     "electron": "^4.1.4"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0"
   }
 }
