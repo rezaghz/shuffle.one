@@ -4,7 +4,9 @@
   "description": "Desktop Application For Shuffle.one",
   "main": "main.js",
   "scripts": {
-    "start": "electron . "
+    "start": "electron . ",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,37 @@
     "url": "https://github.com/rezaghz/shuffle.one/issues"
   },
   "homepage": "https://github.com/rezaghz/shuffle.one#readme",
+  "build": {
+    "appId": "com.electron.shuffle.one",
+    "productName": "Shuffle.one",
+    "copyright": "Copyright © year Rezaghz.com",
+    "mac": {
+      "category": "public.app-category.music",
+      "target": "dmg",
+      "icon": "asset/icon/icon.icns"
+    },
+    "dmg": {
+      "backgroundColor": "#EA1D78",
+      "icon": "asset/icon/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "asset/icon/icon.ico"
+    },
+    "nsis": {
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "oneClick": false
+    }
+  },
   "devDependencies": {
-    "electron": "^4.1.4"
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0"
   },
   "dependencies": {
-    "electron-reload": "^1.4.0"
+    "electron-is-dev": "^1.1.0",
+    "electron-reload": "^1.4.0",
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
